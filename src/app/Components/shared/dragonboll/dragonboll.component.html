@@ -13,11 +13,14 @@
   <div class="col-12 col-sm-6">
     <h3> Listado </h3>
     <ol>
-     <li>GOKU</li>
-     <li>GOKU</li>
-     <li>GOKU</li>
-     <li>GOKU</li>
-     <li>GOKU</li>
+      @for (character of characters(); track character.id ) {
+<li>
+  <span> {{character.name}} </span>
+  <strong> {{character.power}} </strong>r
+</li>
+
+      }
+
 
     </ol>
 
